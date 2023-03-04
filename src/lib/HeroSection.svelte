@@ -29,8 +29,8 @@
 	}
 
 	onMount(() => {
-		setInterval(changeGateText, 3000);
-		setInterval(changeToolText, 3000);
+		setInterval(changeGateText, 2000);
+		setInterval(changeToolText, 2000);
 	});
 </script>
 
