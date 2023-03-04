@@ -101,5 +101,18 @@
 				</div>
 			</div>
 		</div>
+		<div class="flex items-center flex-col mt-16 text-center w-full">
+			<h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl lg:text-4xl">
+				Sign up for early access
+			</h3>
+			<a
+				href="https://form.waitlistpanda.com/go/L0zfvXH00hvIG9DSTLUw"
+				target="_blank"
+				rel="noreferrer"
+				class="relative mt-12 flex h-12 w-full items-center justify-center px-14 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+			>
+				<span class="relative font-semibold text-white">Sign up</span>
+			</a>
+		</div>
 	</Container>
 </div>
