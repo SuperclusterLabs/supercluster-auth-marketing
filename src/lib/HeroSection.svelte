@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Container from './Container.svelte';
-	import Button from './Button.svelte';
-	import HeroImage from '$lib/assets/heroImage.png';
+	import HeroImage from '$lib/assets/HeroImage.png';
 
 	const GateText = ['NFTs', 'Tokens', 'POAPs', 'Snapshot', 'Otterspace Badges'];
 
