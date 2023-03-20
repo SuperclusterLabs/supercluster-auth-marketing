@@ -3,7 +3,7 @@
 	import Products from './Products.svelte';
 </script>
 
-<div class="pt-20 md:pt-32" id="solution">
+<div class="pt-20 md:pt-32 relative" id="solution">
 	<Container>
 		<Products />
 	</Container>

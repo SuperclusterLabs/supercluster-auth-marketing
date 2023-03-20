@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Container from './Container.svelte';
-	import HeroImage from '$lib/assets/HeroImage.png';
+	import HeroImage from '$lib/assets/Hero-Image.png';
 
-	const GateText = ['NFTs', 'Tokens', 'POAPs', 'Snapshot', 'Otterspace Badges'];
+	const GateText = ['NFTs', 'Tokens', 'POAPs', 'Snapshot', 'Otterspace'];
 
-	const ToolText = ['Notion', 'Google Drive', 'CharmVerse', 'Discord'];
+	const ToolText = ['Notion', 'Drive', 'Asana', 'Discord', 'Trello'];
 	let gateCounter: number = 0;
 	let toolCounter: number = 0;
 
@@ -34,29 +34,27 @@
 	});
 </script>
 
-<div class="relative overflow-hidden dark:bg-darker lg:overflow-auto" id="home">
-	<div class="absolute inset-x-0 top-32 lg:hidden">
-		<div
-			aria-hidden="true"
-			class="grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-60 2xl:mx-auto 2xl:max-w-6xl"
-		>
-			<div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-3xl dark:from-blue-700" />
-			<div
-				class="h-72 rounded-full bg-gradient-to-r from-cyan-400 to-sky-300 blur-3xl dark:from-transparent dark:to-indigo-600"
-			/>
-		</div>
-	</div>
+<div class="relative dark:bg-darker" id="home">
 	<Container>
 		<div class="relative ml-auto pt-40 xl:pt-36">
 			<div class="gap-12 md:flex md:items-center">
-				<div class="text-center sm:px-12 md:w-2/3 md:px-0 md:text-left lg:w-1/2">
-					<h1 class="text-3xl font-black dark:text-white md:text-6xl xl:text-7xl">
-						Gate access to <span class="text-secondary">{currentTool}</span> using
-						<span class="text-secondary">{currentGate}</span>
+				<div
+					class="text-center sm:px-12 md:w-2/3 px-8 py-8 md:text-left lg:w-1/2 drop-shadow-xl bg-white rounded-3xl"
+				>
+					<h1 class="font-black text-4xl md:text-6xl">
+						Gate access to <br />
+						<h1 class="text-secondary text-5xl md:text-7xl my-4 underline underline-offset-4">
+							{currentTool}
+						</h1>
+						using<br />
+						<h1 class="text-secondary text-5xl md:text-7xl my-4 underline underline-offset-4">
+							{currentGate}
+						</h1>
 					</h1>
 					<div class="">
 						<p class="mt-8 text-lg text-gray-700 dark:text-gray-100">
-							Easily share your documents with the right people using any web3 primitive.
+							Easily manage access to all your collaboration tools for your community. Your
+							community deserves the tools that actually work.
 						</p>
 						<a
 							href="https://form.waitlistpanda.com/go/L0zfvXH00hvIG9DSTLUw"
@@ -68,21 +66,12 @@
 						</a>
 					</div>
 				</div>
-				<div class="relative mt-20 md:mt-0 md:w-2/5 lg:w-3/5">
+				<div class="relative mt-20 md:mt-0 md:w-2/5">
 					<div class="-ml-6 md:-mr-72 lg:mr-0">
 						<img
 							class="h-full object-cover object-left dark:hidden"
 							src={HeroImage}
 							alt="app screenshot"
-							width="1628"
-							height="1233"
-						/>
-						<img
-							class="hidden h-full object-cover object-left dark:block"
-							src={HeroImage}
-							alt="app screenshot"
-							width="1628"
-							height="1233"
 						/>
 					</div>
 				</div>
