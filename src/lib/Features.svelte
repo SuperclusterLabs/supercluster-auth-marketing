@@ -1,118 +1,75 @@
 <script lang="ts">
 	import Container from './Container.svelte';
-	import Feature from './Feature.svelte';
-
-	// Images
-	import HeaderImage from '$lib/assets/header.jpg';
-	import BadgeSVG from '$lib/assets/Badge.svg';
-	import NFTSVG from '$lib/assets/NFT.svg';
-	import TokenSVG from '$lib/assets/Token.svg';
+	import manageImage from '$lib/assets/manage-image.png';
+	import defineImage from '$lib/assets/define-image.png';
+	import onboardImage from '$lib/assets/onboard-image.png';
 </script>
 
 <div class="relative pt-32 md:pt-44" id="features">
 	<Container>
-		<div class="mx-auto md:w-3/5">
-			<h2
-				class="text-center text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"
+		<div class="mx-auto">
+			<h3
+				class="text-center text-2xl md:text-3xl text-black dark:text-white leading-loose md:leading-loose"
 			>
-				Designed for your decentralized community
-			</h2>
+				Supercluster Airlock is an <span class="font-bold text-planetYellow"
+					>access management platform for your community</span
+				>. It integrates web3 primitives with traditional web2 tooling into a simple platform where
+				effective collaboration becomes a reality.
+			</h3>
 		</div>
-
-		<div class="mt-16 md:mt-20">
-			<div
-				class="relative grid rounded-3xl border border-gray-200 p-1 dark:border-gray-800 lg:grid-cols-2"
-			>
-				<div class="absolute inset-0 hidden h-max dark:block lg:my-auto">
-					<div
-						aria-hidden="true"
-						class="grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-6xl"
-					>
-						<div
-							class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-3xl dark:from-blue-700"
-						/>
-						<div
-							class="h-72 rounded-full bg-gradient-to-r from-cyan-400 to-sky-300 blur-3xl dark:from-transparent dark:to-indigo-600"
-						/>
-					</div>
-				</div>
-				<div>
-					<div
-						class="relative flex h-full flex-col items-center justify-center gap-6 p-8 py-16 lg:py-8"
-					>
-						<img
-							src={HeaderImage}
-							alt="xp icon illustration"
-							width="512"
-							height="512"
-							loading="lazy"
-						/>
-						<div class="mx-auto text-center sm:w-2/5">
-							<h2 class="text-xl font-semibold text-gray-900 dark:text-white">
-								Gate any of your community's content using your web3 primitives
-							</h2>
-						</div>
-					</div>
-				</div>
-				<div
-					class="relative grid overflow-hidden rounded-[1.25rem] bg-gray-100 p-1 dark:bg-gray-800/50 sm:grid-cols-2"
-				>
-					<Feature
-						title="NFTs"
-						description="Gate access to your content or tools using any ERC-721 or ERC-1155"
-					>
-						<img class="m-auto h-6 w-6 text-gray-700 dark:text-white" src={NFTSVG} alt="NFT" />
-					</Feature>
-
-					<Feature title="Tokens" description="Use your community token to gate your content">
-						<img class="m-auto h-6 w-6 text-gray-700 dark:text-white" src={TokenSVG} alt="Token" />
-					</Feature>
-
-					<Feature
-						title="POAPs"
-						description="Ensure that only people that attended your events have access"
-					>
-						<img
-							class="m-auto h-6 w-6 text-gray-700 dark:text-white"
-							src={BadgeSVG}
-							alt="POAP Badge"
-						/>
-					</Feature>
-
-					<Feature
-						title="Snapshot"
-						description="Allow access to engaged members who vote on your Snapshot proposals"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="m-auto h-6 w-6 text-gray-700 dark:text-white"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-							/>
-						</svg>
-					</Feature>
-				</div>
+		<div class="md:flex flex-row cols col-2 gap-6 mt-28">
+			<div class="w-full md:w-1/2">
+				<h3 class="mb-4 text-2xl md:text-3xl font-bold leading-relaxed">
+					Easily manage your <span class="text-planetYellow">anonymous teams</span> and
+					<span class="text-planetYellow">cohorts</span>
+				</h3>
+				<ul class="text-md mb-8 md:text-lg list-disc list-inside">
+					<li>Define your access requirements using web3 and web2 engagement primitives.</li>
+					<li>Your community members will automatically get access to your tools.</li>
+					<li>No more doxxing.</li>
+				</ul>
+			</div>
+			<div>
+				<img src={manageImage} alt="Manage anonymous teams and cohorts" />
 			</div>
 		</div>
-		<div class="flex items-center flex-col mt-16 text-center w-full">
-			<h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl lg:text-4xl">
-				Sign up for early access
-			</h3>
-			<a
-				href="https://form.waitlistpanda.com/go/L0zfvXH00hvIG9DSTLUw"
-				target="_blank"
-				rel="noreferrer"
-				class="relative mt-12 flex h-12 w-full items-center justify-center px-14 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-			>
-				<span class="relative font-semibold text-white">Sign up</span>
-			</a>
+		<div class="md:flex flex-row cols col-2 gap-6 mt-28">
+			<div class="w-full md:w-1/2">
+				<h3 class="mb-4 text-2xl md:text-3xl font-bold leading-relaxed">
+					<span class="text-planetYellow">Define</span> and
+					<span class="text-planetYellow">automate</span> your community’s access requirements
+				</h3>
+				<ul class="mb-8 text-md md:text-lg list-disc list-inside">
+					<li>
+						Once your access requirements are defined, access is automatically enforced by Airlock.
+					</li>
+					<li>
+						As users engage more, they will automatically gain access to additional tooling, defined
+						by your team.
+					</li>
+				</ul>
+			</div>
+			<div class="sm:flex-2">
+				<img class="w-[450px]" src={defineImage} alt="Manage anonymous teams and cohorts" />
+			</div>
+		</div>
+		<div class="md:flex flex-row cols col-2 gap-6 mt-28">
+			<div class="w-full md:w-1/2">
+				<h3 class="mb-4 text-2xl md:text-3xl font-bold leading-relaxed">
+					<span class="text-planetYellow">Onboard</span> your new contributors to all your tools, at
+					once.
+				</h3>
+				<ul class="mb-8 text-md md:text-lg list-disc list-inside">
+					<li>Integrate all the tools that your community or team uses.</li>
+					<li>
+						When a new contributor joins, they’ll be able to easily see and access all the tools
+						they need to get started.
+					</li>
+				</ul>
+			</div>
+			<div>
+				<img class="w-[650px]" src={onboardImage} alt="Manage anonymous teams and cohorts" />
+			</div>
 		</div>
 	</Container>
 </div>
