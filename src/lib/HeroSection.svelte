@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import Container from './Container.svelte';
 	import HeroImage from '$lib/assets/Hero-Image.png';
+	import Button from './Button.svelte';
 
 	const GateText = ['NFTs', 'Tokens', 'POAPs', 'Snapshot', 'Otterspace'];
 
@@ -51,29 +52,18 @@
 							{currentGate}
 						</h1>
 					</h1>
-					<div class="">
+					<div>
 						<p class="mt-8 text-lg text-gray-700 dark:text-gray-100">
 							Easily manage access to all your collaboration tools for your community. Your
 							community deserves the tools that actually work.
 						</p>
-						<a
-							href="https://form.waitlistpanda.com/go/L0zfvXH00hvIG9DSTLUw"
-							target="_blank"
-							rel="noreferrer"
-							class="relative mt-4 flex h-12 w-full items-center justify-center px-14 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-						>
-							<span class="relative font-semibold text-white">Sign up</span>
-						</a>
+						<div class="mt-8">
+							<Button>Get early access</Button>
+						</div>
 					</div>
 				</div>
 				<div class="relative mt-20 md:mt-0 md:w-2/5">
-					<div class="-ml-6 md:-mr-72 lg:mr-0">
-						<img
-							class="h-full object-cover object-left dark:hidden"
-							src={HeroImage}
-							alt="app screenshot"
-						/>
-					</div>
+					<img src={HeroImage} alt="app screenshot" />
 				</div>
 			</div>
 		</div>
