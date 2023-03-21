@@ -41,3 +41,7 @@
 	top: 170%;
 	border-radius: theme('borderRadius.full');
 }
+
+ul > li {
+	margin: 16px 0;
+}

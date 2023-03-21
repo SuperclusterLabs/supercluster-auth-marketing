@@ -1,18 +1,8 @@
-<script lang="ts">
-	export let label: string = '';
-	export let type: string = '';
-	export let emphasis: string = '';
-	export let to: string = '';
-</script>
-
 <a
-	href={to}
-	class={emphasis == 'primary'
-		? 'before:bg-primary'
-		: 'before:border before:border-transparent before:bg-primary/10 dark:before:border-gray-700 dark:before:bg-gray-800'}
-	{type}
+	href="https://form.waitlistpanda.com/go/L0zfvXH00hvIG9DSTLUw"
+	target="_blank"
+	rel="noreferrer"
+	class="relative flex py-4 w-full items-center justify-center px-14 before:absolute before:inset-0 before:rounded-full before:bg-terraGreen before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
 >
-	<span class={emphasis == 'primary' ? 'text-white' : 'text-primary dark:text-white'}>
-		{label}
-	</span>
+	<span class="relative font-semibold text-white"><slot /></span>
 </a>

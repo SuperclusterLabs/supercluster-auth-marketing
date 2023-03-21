@@ -1,4 +1,4 @@
-<div class="circle-green" />
-<div class="circle-brown" />
-<div class="circle-blue" />
-<div class="circle-grey" />
+<div class="invisible md:visible circle-green" />
+<div class="invisible md:visible circle-brown" />
+<div class="invisible md:visible circle-blue" />
+<div class="invisible md:visible circle-grey" />

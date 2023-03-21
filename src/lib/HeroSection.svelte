@@ -29,14 +29,14 @@
 	}
 
 	onMount(() => {
-		setInterval(changeGateText, 2000);
-		setInterval(changeToolText, 2000);
+		setInterval(changeGateText, 1500);
+		setInterval(changeToolText, 1500);
 	});
 </script>
 
 <div class="relative dark:bg-darker" id="home">
 	<Container>
-		<div class="relative ml-auto pt-40 xl:pt-36">
+		<div class="relative ml-auto mt-10 md:mt-20 xl:pt-36">
 			<div class="gap-12 md:flex md:items-center">
 				<div
 					class="text-center sm:px-12 md:w-2/3 px-8 py-8 md:text-left lg:w-1/2 drop-shadow-xl bg-white rounded-3xl"

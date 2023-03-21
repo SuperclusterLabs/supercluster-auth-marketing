@@ -4,7 +4,6 @@
 	import HeroSection from '$lib/HeroSection.svelte';
 	import Features from '$lib/Features.svelte';
 	import AppHeader from '$lib/AppHeader.svelte';
-	import Solution from '$lib/Solution.svelte';
 	import AppFooter from '$lib/AppFooter.svelte';
 	import Supporters from '$lib/Supporters.svelte';
 	import Circles from '$lib/Circles.svelte';
