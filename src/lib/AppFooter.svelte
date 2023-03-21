@@ -26,7 +26,7 @@
 				</a>
 				<a
 					class="duration-300 hover:text-gray-600 dark:hover:text-white"
-					href="https://discord.gg/shKeHySU"
+					href="https://discord.gg/KxRPj43aPT"
 					title="discord"
 					target="blank"
 					aria-label="discord"
