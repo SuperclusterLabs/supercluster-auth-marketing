@@ -8,7 +8,7 @@
 	<nav>
 		<Container>
 			<div
-				class="relative flex flex-wrap items-center justify-center sm:justify-between py-6 px-8 mt-6 bg-transparent md:bg-white drop-shadow-xl rounded-full"
+				class="relative flex flex-wrap items-center justify-center sm:justify-between py-6 px-8 mt-0 md:mt-6 bg-transparent md:bg-white drop-shadow-xl rounded-full"
 			>
 				<div class="relative flex justify-between md:px-0">
 					<a href="/" aria-label="logo" class="flex items-center">

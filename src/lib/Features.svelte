@@ -5,7 +5,7 @@
 	import onboardImage from '$lib/assets/onboard-image.png';
 </script>
 
-<div class="relative pt-32 md:pt-44" id="features">
+<div class="relative mt-20 md:mt-40" id="features">
 	<Container>
 		<div class="mx-auto">
 			<h3

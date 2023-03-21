@@ -8,7 +8,7 @@
 
 <footer class="bg-deepBlue w-full">
 	<Container>
-		<div class="flex flex-row justify-between py-6">
+		<div class="flex flex-col md:flex-row items-center gap-6 justify-between py-6">
 			<a href="#home" aria-label="logo" class="flex items-center justify-center space-x-2">
 				<a href="#home" aria-label="logo" class="flex items-center space-x-2">
 					<img class="w-[215px]" src={SCLogoColor} alt="Supercluster Logo" />

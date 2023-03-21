@@ -20,7 +20,7 @@
 	});
 </script>
 
-<div class="bg-planetYellow p-20 mx-auto mt-28">
+<div class="bg-planetYellow py-10 px-5 md:p-20 mx-auto mt-28">
 	<Container>
 		<h1 class="text-2xl md:text-4xl mb-10 leading-relaxed">
 			We’ve built an access management platform based on engagement, not identity.<br /><br />
